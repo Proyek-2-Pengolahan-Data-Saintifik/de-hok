@@ -3,13 +3,7 @@
 <head>
 
      <title>Digital Trend - Blog</title>
-<!--
 
-DIGITAL TREND
-
-https://templatemo.com/tm-538-digital-trend
-
--->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -17,19 +11,13 @@ https://templatemo.com/tm-538-digital-trend
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/font-awesome.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/aos.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/owl.carousel.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/owl.theme.default.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
 
      <!-- MAIN CSS -->
-     <!-- <link rel="stylesheet" href="static/css/templatemo-digital-trend.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-digital-trend.css') }}">
 </head>
 <body>
@@ -37,7 +25,7 @@ https://templatemo.com/tm-538-digital-trend
      <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg position-absolute">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
               <i class="fa fa-line-chart"></i>
               Digital Trend
             </a>
@@ -50,16 +38,16 @@ https://templatemo.com/tm-538-digital-trend
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html#about" class="nav-link">Studio</a>
+                        <a href="#about" class="nav-link">Studio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#project" class="nav-link">Our Works</a>
+                        <a href="#project" class="nav-link">Our Works</a>
                     </li>
                     <li class="nav-item">
-                        <a href="blog.html" class="nav-link active">Blog</a>
+                      <a href="{{ url_for('blog') }}" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link contact">Contact</a>
+                      <a href="{{ url_for('contact') }}" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +67,7 @@ https://templatemo.com/tm-538-digital-trend
 
                     <div class="col-lg-7 col-md-7 col-12 mb-4">
                       <div class="blog-header" data-aos="fade-up" data-aos-delay="100">
-                        <img src="static/images/blog/blog-header-image.jpg" class="img-fluid" alt="blog header">
+                        <img src="{{ url_for('static', filename='images/blog/blog-header-image.jpg') }}" class="img-fluid" alt="blog header">
 
                         <div class="blog-header-info">
                           <h4 class="blog-category text-info">Creative</h4>
@@ -91,7 +79,7 @@ https://templatemo.com/tm-538-digital-trend
 
                     <div class="col-lg-5 col-md-5 col-12 mb-4">
                       <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/blog/blog-sidebar-image.jpg" class="img-fluid" alt="blog">
+                        <img src="{{ url_for('static', filename='images/blog/blog-sidebar-image.jpg') }}" class="img-fluid" alt="blog">
 
                         <div class="blog-info">
                           <h4 class="blog-category text-danger">Design</h4>
@@ -101,7 +89,7 @@ https://templatemo.com/tm-538-digital-trend
                       </div>
 
                       <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                        <img src="static/images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog">
+                        <img src="{{ url_for('static', filename='images/blog/blog-sidebar-image01.jpg') }}" class="img-fluid" alt="blog">
 
                         <div class="blog-info">
                           <h4 class="blog-category text-success">lifestyle</h4>
@@ -111,7 +99,7 @@ https://templatemo.com/tm-538-digital-trend
                       </div>
 
                       <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="static/images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog">
+                        <img src="{{ url_for('static', filename='images/blog/blog-sidebar-image02.jpg') }}" class="img-fluid" alt="blog">
 
                         <div class="blog-info">
                           <h4 class="blog-category text-primary">Coding</h4>
@@ -123,9 +111,7 @@ https://templatemo.com/tm-538-digital-trend
                     </div>
 
                     <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
-
-                      <img src="static/images/newsletter.png" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
-                    </div>
+                      <img src="{{ url_for('static', filename='images/newsletter.png') }}" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
 
                     <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12 newsletter-form">
                       <h4 data-aos="fade-up" data-aos-delay="200">Email Newsletter</h4>
@@ -218,12 +204,12 @@ https://templatemo.com/tm-538-digital-trend
 
 
      <!-- SCRIPTS -->
-     <script src="static/js/jquery.min.js"></script>
-     <script src="static/js/bootstrap.min.js"></script>
-     <script src="static/js/aos.js"></script>
-     <script src="static/js/owl.carousel.min.js"></script>
-     <script src="static/js/smoothscroll.js"></script>
-     <script src="static/js/custom.js"></script>
+     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 
 </body>
 </html>

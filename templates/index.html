@@ -3,13 +3,7 @@
 <head>
 
      <title>Digital Trend HTML Template</title>
-<!--
 
-DIGITAL TREND
-
-https://templatemo.com/tm-538-digital-trend
-
--->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -17,19 +11,13 @@ https://templatemo.com/tm-538-digital-trend
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/font-awesome.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/aos.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/owl.carousel.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-     <!-- <link rel="stylesheet" href="static/css/owl.theme.default.min.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
 
      <!-- MAIN CSS -->
-     <!-- <link rel="stylesheet" href="static/css/templatemo-digital-trend.css"> -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-digital-trend.css') }}">
 
 </head>
@@ -60,7 +48,7 @@ https://templatemo.com/tm-538-digital-trend
                          <a href="{{ url_for('blog') }}" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link contact">Contact</a>
+                         <a href="{{ url_for('contact') }}" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -86,8 +74,7 @@ https://templatemo.com/tm-538-digital-trend
 
                         <div class="col-lg-6 col-12">
                           <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
-
-                            <img src="static/images/working-girl.png" class="img-fluid" alt="working girl">
+                            <img src="{{ url_for('static', filename='images/working-girl.png') }}" class="img-fluid" alt="working girl">
                           </div>
                         </div>
 
@@ -111,8 +98,7 @@ https://templatemo.com/tm-538-digital-trend
                          </div>
 
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
-
-                          <img src="static/images/office.png" class="img-fluid" alt="office">
+                          <img src="{{ url_for('static', filename='images/office.png') }}" class="img-fluid" alt="office">
                         </div>
                     </div>
 
@@ -135,7 +121,7 @@ https://templatemo.com/tm-538-digital-trend
 
                          <div class="owl-carousel owl-theme" id="project-slide">
                               <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
-                                   <img src="static/images/project/project-image01.jpg" class="img-fluid" alt="project image">
+                                   <img src="{{ url_for('static', filename='images/project/project-image01.jpg') }}" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
                                         <small>Marketing</small>
@@ -150,7 +136,7 @@ https://templatemo.com/tm-538-digital-trend
                               </div>
 
                               <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="static/images/project/project-image02.jpg" class="img-fluid" alt="project image">
+                                   <img src="{{ url_for('static', filename='images/project/project-image02.jpg') }}" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
                                         <small>Website</small>
@@ -165,7 +151,8 @@ https://templatemo.com/tm-538-digital-trend
                               </div>
 
                               <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="static/images/project/project-image03.jpg" class="img-fluid" alt="project image">
+                                   <img src="{{ url_for('static', filename='images/project/project-image03.jpg') }}" class="img-fluid" alt="project image">
+
 
                                    <div class="project-info">
                                         <small>Branding</small>
@@ -180,7 +167,7 @@ https://templatemo.com/tm-538-digital-trend
                               </div>
 
                               <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="static/images/project/project-image04.jpg" class="img-fluid" alt="project image">
+                                   <img src="{{ url_for('static', filename='images/project/project-image04.jpg') }}" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
                                         <small>Social Media</small>
@@ -195,7 +182,7 @@ https://templatemo.com/tm-538-digital-trend
                               </div>
 
                               <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="static/images/project/project-image05.jpg" class="img-fluid" alt="project image">
+                                   <img src="{{ url_for('static', filename='images/project/project-image05.jpg') }}" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
                                         <small>Video</small>
@@ -223,8 +210,7 @@ https://templatemo.com/tm-538-digital-trend
 
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="contact-image" data-aos="fade-up">
-
-                          <img src="static/images/female-avatar.png" class="img-fluid" alt="website">
+                          <img src="{{ url_for('static', filename='images/female-avatar.png') }}" class="img-fluid" alt="website">
                         </div>
                     </div>
 
@@ -312,12 +298,12 @@ https://templatemo.com/tm-538-digital-trend
 
 
      <!-- SCRIPTS -->
-     <script src="static/js/jquery.min.js"></script>
-     <script src="static/js/bootstrap.min.js"></script>
-     <script src="static/js/aos.js"></script>
-     <script src="static/js/owl.carousel.min.js"></script>
-     <script src="static/js/smoothscroll.js"></script>
-     <script src="static/js/custom.js"></script>
+     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 
 </body>
 </html>
