@@ -17,15 +17,20 @@ https://templatemo.com/tm-538-digital-trend
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/aos.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+     <!-- <link rel="stylesheet" href="static/css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+     <!-- <link rel="stylesheet" href="static/css/aos.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+     <!-- <link rel="stylesheet" href="static/css/owl.carousel.min.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+     <!-- <link rel="stylesheet" href="static/css/owl.theme.default.min.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
-
+     <!-- <link rel="stylesheet" href="static/css/templatemo-digital-trend.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-digital-trend.css') }}">
 </head>
 <body>
 
@@ -74,7 +79,7 @@ https://templatemo.com/tm-538-digital-trend
 
                     <div class="col-lg-7 col-md-7 col-12 mb-4">
                       <div class="blog-header" data-aos="fade-up" data-aos-delay="100">
-                        <img src="images/blog/blog-header-image.jpg" class="img-fluid" alt="blog header">
+                        <img src="static/images/blog/blog-header-image.jpg" class="img-fluid" alt="blog header">
 
                         <div class="blog-header-info">
                           <h4 class="blog-category text-info">Creative</h4>
@@ -96,7 +101,7 @@ https://templatemo.com/tm-538-digital-trend
                       </div>
 
                       <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                        <img src="images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog">
+                        <img src="static/images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog">
 
                         <div class="blog-info">
                           <h4 class="blog-category text-success">lifestyle</h4>
@@ -106,7 +111,7 @@ https://templatemo.com/tm-538-digital-trend
                       </div>
 
                       <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog">
+                        <img src="static/images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog">
 
                         <div class="blog-info">
                           <h4 class="blog-category text-primary">Coding</h4>
@@ -119,7 +124,7 @@ https://templatemo.com/tm-538-digital-trend
 
                     <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
 
-                      <img src="images/newsletter.png" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
+                      <img src="static/images/newsletter.png" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
                     </div>
 
                     <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12 newsletter-form">
@@ -213,11 +218,12 @@ https://templatemo.com/tm-538-digital-trend
 
 
      <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/aos.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+     <script src="static/js/jquery.min.js"></script>
+     <script src="static/js/bootstrap.min.js"></script>
+     <script src="static/js/aos.js"></script>
+     <script src="static/js/owl.carousel.min.js"></script>
+     <script src="static/js/smoothscroll.js"></script>
+     <script src="static/js/custom.js"></script>
 
 </body>
 </html>
