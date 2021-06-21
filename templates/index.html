@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>Digital Trend HTML Template</title>
+     <title>de'hok | Hoax News Detector</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -12,7 +12,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
@@ -24,11 +24,11 @@
 <body>
 
      <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg position-absolute">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="{{ url_for('index') }}">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
               <i class="fa fa-line-chart"></i>
-              Digital Trend
+              <b>de'hok</b>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -39,16 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="{{ url_for('index') }}" class="nav-link">Studio</a>
+                        <a href="{{ url_for('index') }}" class="nav-link smoothScroll">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url_for('index') }}" class="nav-link">Our Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url_for('blog') }}" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url_for('contact') }}" class="nav-link active contact">Contact</a>
+                         <a href="{{ url_for('contact') }}" class="nav-link">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -63,12 +57,10 @@
 
                         <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                               <div class="hero-text">
-
-                                   <h1 class="text-white" data-aos="fade-up">We are ready for your digital marketing</h1>
-
-                                   <a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>
-
-                                   <strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>
+                                   <h1 class="text-white" data-aos="fade-up"><b>de'hok</b></h1>
+                                   <h1 class="text-white" data-aos="fade-up">Hoax News Detector</h1>
+                                   <p class="text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-1"></i>Let's Stop the Domino Effect of Spreading Hoax News</p>
+                                   <a href="#checkNews" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Check Now!</a>
                               </div>
                         </div>
 
@@ -84,24 +76,18 @@
 
 
      <!-- ABOUT -->
-     <section class="about section-padding pb-0" id="about">
+     <section class="about section-padding pb-0" id="checkNews">
           <div class="container">
                <div class="row">
 
                     <div class="col-lg-7 mx-auto col-md-10 col-12">
-                         <div class="about-info">
-
-                              <h2 class="mb-4" data-aos="fade-up">the best <strong>Digital Marketing agency</strong> in Rio de Janeiro</h2>
-
-                              <p class="mb-0" data-aos="fade-up">Total 5 HTML pages are included in this template from TemplateMo website. Please check 2 <a href="blog.html">blog</a> pages, <a href="project-detail.html">project</a> page, and <a href="contact.html">contact</a> page. 
-                              <br><br>You are <strong>allowed</strong> to use this template for commercial or non-commercial purpose. You are NOT allowed to redistribute the template ZIP file on template collection websites.</p>
+                         <div class="news-input">
                          </div>
 
-                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
-                          <img src="{{ url_for('static', filename='images/office.png') }}" class="img-fluid" alt="office">
+                         <div class="button" data-aos="fade-up" data-aos-delay="200" id="button">
                         </div>
-                    </div>
 
+                    </div>
                </div>
           </div>
      </section>
@@ -113,11 +99,6 @@
                <div class="row">
 
                     <div class="col-lg-12 col-12">
-
-                        <h2 class="mb-5 text-center" data-aos="fade-up">
-                            Please take a look through our
-                            <strong>featured Digital Trends</strong>
-                        </h2>
 
                          <div class="owl-carousel owl-theme" id="project-slide">
                               <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
@@ -210,24 +191,10 @@
 
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="contact-image" data-aos="fade-up">
-                          <img src="{{ url_for('static', filename='images/female-avatar.png') }}" class="img-fluid" alt="website">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-7 col-12">
-                      <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Client Testimonials</h4>
-
-                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
-
-                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>
-
-                      <p data-aos="fade-up" data-aos-delay="400">
-                        <strong>Mary Zoe</strong>
-
-                        <span class="mx-1">/</span>
-
-                        <small>Digital Agency (CEO)</small>
-                      </p>
                     </div>
 
                </div>
@@ -240,46 +207,47 @@
         <div class="row">
 
           <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">We make creative <strong>brands</strong> only.</h1>
+            <h2 class=data-aos="fade-up" data-aos-delay="100"><strong><b>de'hok</b></strong></h2>
+            <h2 class="text-white" data-aos="fade-up" data-aos-delay="100">Hoax News Detector</h2>
+            <a class="text-white" data-aos="fade-up" data-aos-delay="100"><i class="fa fa-phone mr-1"></i>Let's Stop the Domino Effect of Spreading Hoax News</a>
           </div>
 
           <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="my-4">Contact Info</h4>
+          <h4><strong>Contact  Info</strong></h4>
 
-            <p class="mb-1">
-              <i class="fa fa-phone mr-2 footer-icon"></i> 
-              +99 080 070 4224
+            <p class="text-white" class="mb-1">
+              <a class="fa fa-phone mr-2 footer-icon"></a>
+              081222333444
             </p>
 
             <p>
-              <a href="#">
+              <a class="text-white" href="#">
                 <i class="fa fa-envelope mr-2 footer-icon"></i>
-                hello@company.com
+                de'hok@company.com
               </a>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-            <h4 class="my-4">Our Studio</h4>
+          <h4 class="text-white"><strong>Our Office</strong></h4>
 
-            <p class="mb-1">
+            <p class="text-white" class="mb-1">
               <i class="fa fa-home mr-2 footer-icon"></i> 
-              Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
+              Bandung
             </p>
           </div>
 
           <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
-            <p class="copyright-text">Copyright &copy; 2020 Your Company
+          <a class="text-white"><p class="copyright-text">Copyright &copy; 2021 de'hok</a>
             <br>
-            <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
+            <!-- <a class="text-white" rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p> -->
           </div>
 
           <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
             
             <ul class="footer-link">
-              <li><a href="#">Stories</a></li>
-              <li><a href="#">Work with us</a></li>
-              <li><a href="#">Privacy</a></li>
+              <li><a class="text-white" href="{{ url_for('index') }}">Home</a></li>
+              <li><a class="text-white" href="{{ url_for('contact') }}">About Us</a></li>
             </ul>
           </div>
 

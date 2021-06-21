@@ -43,9 +43,9 @@ https://templatemo.com/tm-538-digital-trend
     --link-color:           #404040;
     --p-color:              #666262;
 
-    --base-font-family:     'Plain-Light', sans-serif;
-    --title-font-family:    'Plain-Regular', sans-serif;
-    --font-bold-family:     'Plain-Bold', sans-serif;
+    --base-font-family:     Georgia;
+    --title-font-family:    Georgia;
+    --font-bold-family:     Georgia;
     --font-weight-bold:     bold;
 
     --h1-font-size:         42px;
@@ -100,11 +100,10 @@ https://templatemo.com/tm-538-digital-trend
 
   p {
     color: var(--p-color);
-    font-size: var(--p-font-size);
+    font-size: medium;
     line-height: 1.5em;
   }
-
-  b, 
+ 
   strong {
     letter-spacing: 0;
     color: var(--secondary-color);
@@ -152,16 +151,16 @@ https://templatemo.com/tm-538-digital-trend
   }
 
   .custom-btn.btn-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--white-color);
     border-color: transparent;
 	transition: all .3s ease;
   }
   
   .custom-btn:hover,
   .custom-btn:focus {
-    background: var(--dark-color);
-    color: var(--white-color);
+    background: var(--white-color);
+    color: var(--primary-color);
     border-color: transparent;
   }
 
@@ -232,6 +231,7 @@ https://templatemo.com/tm-538-digital-trend
   .navbar-brand {
     color: var(--white-color);
     font-size: var(--h2-font-size);
+    font-family: Georgia;
   }
 
   .nav-link {
@@ -565,7 +565,7 @@ https://templatemo.com/tm-538-digital-trend
   -----------------------------------------*/
 
   .site-footer {
-    background: var(--dark-color);
+    background: var(--menu-bg);
     padding: 7em 0 6em 0;
   }
 
@@ -578,10 +578,11 @@ https://templatemo.com/tm-538-digital-trend
     color: var(--secondary-color);
   }
 
-  .footer-link li {
+  .footer-link li{
     display: inline-block;
     list-style: none;
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   .copyright-text,
@@ -591,7 +592,7 @@ https://templatemo.com/tm-538-digital-trend
   }
 
   .copyright-text {
-    margin-top: 5.3em;
+    margin-top: 125px;
   }
 
 
@@ -648,6 +649,7 @@ https://templatemo.com/tm-538-digital-trend
 
     .hero-text {
       bottom: 2em;
+      font-family: Georgia;
     }
 
     .navbar {
@@ -657,6 +659,7 @@ https://templatemo.com/tm-538-digital-trend
     .navbar-collapse {
       text-align: center;
       padding: 2.5em 0;
+      font-family: Georgia;
     }
 
     .nav-link {
@@ -665,6 +668,7 @@ https://templatemo.com/tm-538-digital-trend
 
     .navbar-expand-lg .navbar-nav .nav-link.contact {
       margin: 1em 0;
+      font-family: Georgia;
     }
 
     .copyright-text, 
@@ -705,8 +709,8 @@ https://templatemo.com/tm-538-digital-trend
       margin: 2.5em 0 1em 0;
     }
 
-    .footer-link li {
-      margin-left: 0;
+    .footer-link.li.a:hover{
+      color: var(--secondary-color)
     }
   }
 
