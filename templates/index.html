@@ -12,7 +12,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
@@ -24,9 +24,9 @@
 <body>
 
      <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg position-absolute">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{{ url_for('index') }}">
               <i class="fa fa-line-chart"></i>
               Digital Trend
             </a>
@@ -39,16 +39,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">Studio</a>
+                        <a href="{{ url_for('index') }}" class="nav-link">Studio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link smoothScroll">Our Works</a>
+                        <a href="{{ url_for('index') }}" class="nav-link">Our Works</a>
                     </li>
                     <li class="nav-item">
-                         <a href="{{ url_for('blog') }}" class="nav-link">Blog</a>
+                        <a href="{{ url_for('blog') }}" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                         <a href="{{ url_for('contact') }}" class="nav-link">Contact</a>
+                        <a href="{{ url_for('contact') }}" class="nav-link active contact">Contact</a>
                     </li>
                 </ul>
             </div>
