@@ -6,12 +6,11 @@ application = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@application.route('/contact', methods=['GET', 'POST'])
-def contact():
+@application.route('/aboutUs', methods=['GET', 'POST'])
+def aboutUs():
     if request.method == 'POST' :
         return redirect(url_for('index'))
-    
-    return render_template('contact.html')
+    return render_template('aboutUs.html')
 
 if __name__ == '__main__':
     application.run(debug=True)
