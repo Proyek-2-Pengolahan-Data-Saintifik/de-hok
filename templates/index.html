@@ -12,7 +12,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
@@ -55,7 +55,7 @@
                <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center">
                               <div class="banner-text">
                                    <h1 class="text-white" data-aos="fade-up"><b>de'hok</b></h1>
                                    <h1 class="text-white" data-aos="fade-up">Hoax News Detector</h1>
@@ -76,69 +76,67 @@
 
      <!-- Check The News -->
 
-
      <!-- Footer -->
-     <footer class="site-footer">
-          <div class="container">
-          <div class="row">
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
 
-               <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-               <h2 class=data-aos="fade-up" data-aos-delay="100"><strong><b>de'hok</b></strong></h2>
-               <h2 class="text-white" data-aos="fade-up" data-aos-delay="100">Hoax News Detector</h2>
-               <a class="text-white" data-aos="fade-up" data-aos-delay="100"><i class="fa fa-phone mr-1"></i>Let's Stop the Domino Effect of Spreading Hoax News</a>
-               </div>
+                <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                    <h2 class=data-aos="fade-up" data-aos-delay="100"><strong><b>de'hok</b></strong></h2>
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="100">Hoax News Detector</h2>
+                    <a class="text-white" data-aos="fade-up" data-aos-delay="100">Let's Stop the Domino Effect of Spreading Hoax News</a>
+                </div>
 
-               <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-               <h4><strong>Contact  Info</strong></h4>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4><strong>Contact  Info</strong></h4>
 
-               <p class="text-white" class="mb-1">
-               <a class="fa fa-phone mr-2 footer-icon"></a>
-               081222333444
-               </p>
+                    <p class="text-white" class="mb-1">
+                        <a class="fa fa-phone mr-2 footer-icon"></a>
+                        081222333444
+                    </p>
 
-               <p>
-               <a class="text-white" href="#">
-                    <i class="fa fa-envelope mr-2 footer-icon"></i>
-                    de'hok@company.com
-               </a>
-               </p>
-               </div>
+                    <p>
+                    <a href="#">
+                        <i class="fa fa-envelope mr-2 footer-icon"></i>
+                        de'hok@company.com
+                    </a>
+                    </p>
+                </div>
 
-               <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-               <h4 class="text-white"><strong>Our Office</strong></h4>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-white"><strong>Our Office</strong></h4>
 
-               <p class="text-white" class="mb-1">
-               <i class="fa fa-home mr-2 footer-icon"></i> 
-               Bandung
-               </p>
-               </div>
+                    <p class="text-white" class="mb-1">
+                    <i class="fa fa-home mr-2 footer-icon"></i> 
+                    Bandung
+                    </p>
+                </div>
 
-               <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
-               <a class="text-white"><p class="copyright-text">Copyright &copy; 2021 de'hok</a>
-               <br>
-               <!-- <a class="text-white" rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p> -->
-               </div>
+                <div class="col-lg-4 mx-lg-auto col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <a class="text-white"><p class="copyright-text">Copyright &copy; 2021 de'hok</a>
+                    <br>
+                    <!-- <a class="text-white" rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p> -->
+                </div>
 
-               <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-               
-               <ul class="footer-link">
-               <li><a class="text-white" href="{{ url_for('index') }}">Home</a></li>
-               <li><a class="text-white" href="{{ url_for('aboutUs') }}">About Us</a></li>
-               </ul>
-               </div>
+                <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    <ul class="footer-link">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('aboutUs') }}">About Us</a></li>
+                    </ul>
+                </div>
 
-               <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-               <ul class="social-icon">
-               <li><a href="#" class="fa fa-instagram"></a></li>
-               <li><a href="#" class="fa fa-twitter"></a></li>
-               <li><a href="#" class="fa fa-dribbble"></a></li>
-               <li><a href="#" class="fa fa-behance"></a></li>
-               </ul>
-               </div>
+                <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <ul class="social-icon">
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-dribbble"></a></li>
+                        <li><a href="#" class="fa fa-behance"></a></li>
+                    </ul>
+                </div>
 
-          </div>
-          </div>
-     </footer>
+            </div>
+        </div>
+    </footer>
 
 
      <!-- SCRIPTS -->
