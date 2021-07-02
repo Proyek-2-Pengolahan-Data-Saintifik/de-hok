@@ -415,7 +415,7 @@
 
   .project-icon {
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 40px;
     background: var(--dark-color);
     border-radius: var(--border-radius-large);
@@ -425,7 +425,7 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    padding-left: 5px;
+    padding-left: 1px;
   }
 
   .owl-theme .owl-dots .owl-dot {
