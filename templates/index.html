@@ -76,26 +76,21 @@
 
      <!-- Check The News -->
      <section class="checkNews pb-3" id="checkNews">
-        <div class="container">
-             <div class="row">
-
-                  <div class="col-lg-7 mx-auto col-md-10 col-12">
-                       <div class="news-input">
-                           <h3>Input the News Text</h3>
-                           <p> Copy the news and then paste it below</p>
-                            <form>
-                                <textarea></textarea>
-                            </form>
-                       </div>
-                       <div class="button-input" id="button-input">
-                            <a href="#" class="custom-btn btn-bg btn mt-3" id="input-button">Check Now!</a>
-                      </div>
-                      <div class="word-proofing"></div>
-
-                      <div class="diagram"></div>
-
-                  </div>
-             </div>
+        <div class="container" style="text-align: center;">
+            <p style="font-size: 30px; color: #057a8d;"> Copy the news and then paste it below  :</p>
+            <div class="news-input">
+                <form action="{{ url_for('predict')}}" method="post">
+                    <textarea name="news"></textarea>
+                    <input class="button-input custom-btn btn-bg btn mt-3" id="button-input" type="submit" value="Check Now!"/>
+                </form>
+                <div class="word-proofing"></div>
+                <div class="diagram"></div>
+            </div>
+                {%if prediction%}
+                <div id="hasil">
+                    <h5 style="font-size: 30px;">Hasil {{prediction}}</h5>
+                </div>
+                {%endif%}
         </div>
    </section>
 
@@ -161,7 +156,6 @@
         </div>
     </footer>
 
-
      <!-- SCRIPTS -->
      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
@@ -169,6 +163,7 @@
      <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
      <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+     <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
 
 </body>
 </html>

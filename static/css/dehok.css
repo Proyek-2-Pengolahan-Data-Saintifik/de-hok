@@ -367,13 +367,17 @@
     resize: none;
   }
 
+  .news-input input{
+    word-break: break-word;
+  }
+
   .news-input h3, .news-input p {
-    text-align: center;
+    text-align: right;
     color: #057a8d;
   }
 
   .button-input {
-    text-align: center
+    text-align: right;
   }
 
   #input-button:hover,
@@ -383,7 +387,24 @@
     border-color: transparent;
   }
 
+  #hasil{
+    background-color: var(--secondary-color);
+    margin-top: 25px;
+    width: 50%;
+    color:var(--primary-color);
+    margin-left: 25%;
+  }
 
+/*  #hasil--show {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  // the shown box does not delay visibility, so it shows instantly and transitions opacity
+  @include transition(
+    opacity 500ms linear,
+    visibility 0s linear
+  )
+}*/
   /*---------------------------------------
   About Us
   -----------------------------------------*/
