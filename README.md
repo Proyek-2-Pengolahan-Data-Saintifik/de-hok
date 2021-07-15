@@ -19,4 +19,7 @@ Tugas Besar Mata Kuliah Proyek 2 - Pengolahan Data Sainifik
 - Run `app.py`, go to the `http://127.0.0.1:5000/`
 - You can check web app is working fine. Sometimes predictions may be wrong.
 
-## Screenshots
+## Our Website
+
+<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/tree/master/static/images/eg-hoax.PNG">
+<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/tree/master/static/images/eg-reliable.PNG">
