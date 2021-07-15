@@ -2,8 +2,7 @@
 Tugas Besar Mata Kuliah Proyek 2 - Pengolahan Data Sainifik
 
 #  Hoax News Detection 📰
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.9.1]
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)               
 
 ## Usage:-
 
