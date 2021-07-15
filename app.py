@@ -13,7 +13,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
-import seaborn as sns
 from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import pickle
