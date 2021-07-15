@@ -21,5 +21,5 @@ Tugas Besar Mata Kuliah Proyek 2 - Pengolahan Data Sainifik
 
 ## Our Website
 
-<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/tree/master/static/images/eg-hoax.PNG">
-<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/tree/master/static/images/eg-reliable.PNG">
+<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/blob/master/static/images/eg-hoax.png">
+<img src="https://github.com/Proyek-2-Pengolahan-Data-Saintifik/de-hok/blob/master/static/images/eg-reliable.png">
