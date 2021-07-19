@@ -62,11 +62,13 @@ def preprocess_input(text):
   return remove_stopword(remove_noise(text.lower()))
 
 def fake_news_det(news):
-   preprocessed_news = preprocess_input(news)
-   input_data = [preprocessed_news]
-   status = loaded_model.predict(tfidf.transform(input_data))
+  news = news.lower()
+  news1 = remove_stopword(news)
+  news2 = remove_noise(news1)
+  input_data = [news2]
+  status = loaded_model.predict(tfidf.transform(input_data))
 
-   return ('Hoax') if (status == 'false') else ('Realiable')
+  return ('Hoax') if (status == 'false') else ('Realiable')
    
 @app.route('/', methods=['GET'])
 def index():
