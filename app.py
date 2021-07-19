@@ -7,12 +7,22 @@ nltk.download('punkt')
 import string as str
 from string import punctuation
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
 import pickle
 
 app = Flask(__name__)
 
 # Define the TFIDF with max value 0.7
+merge = pd.read_csv('dataset_merge.csv')
+
+x = merge['text']
+y = merge['Label']
+
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=1)
+
 tfidf = TfidfVectorizer(max_df=0.7)
+tfidf_train = tfidf.fit_transform(X_train)
+tfidf_test = tfidf.transform(X_test.values.astype('U'))
 
 # Loaded model and words for word proofing
 loaded_model = pickle.load(open('model.pkl', 'rb'))
